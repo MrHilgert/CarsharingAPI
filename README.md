@@ -78,7 +78,7 @@ $ npm run test:cov
 
 ## ER-Diagram
 
-![ER-Diagram](https://github.com/MrHilgert/CarsharingAPI/blob/master/ER-Diagram.jpg?raw=true)
+![ER-Diagram](https://github.com/MrHilgert/CarsharingAPI/blob/master/ER-Diagram.png?raw=true)
 
 ## Support
 
