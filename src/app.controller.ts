@@ -36,9 +36,8 @@ export class AppController {
     }
 
     @Get('/getLastOrder/:carId')
-    public async getLastOrder(@Param('carId') carId: string) {
-        const order = await this.appService.getLastOrderOfCar(parseInt(carId));
-        return order;
+    public getLastOrder(@Param('carId') carId: string) {
+        return this.appService.getLastOrderOfCar(parseInt(carId));
     }
 
 }

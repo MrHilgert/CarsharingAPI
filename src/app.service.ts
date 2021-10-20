@@ -30,8 +30,8 @@ export class AppService {
                 throw new BadRequestException('Cannot order this car, it\'s paused for 3 days');
         }
 
-        // if (this.WEEKENDS.includes(now.getDay()) || this.WEEKENDS.includes(end.getDay()))
-        //     throw new BadRequestException('Order cannot start or end on weekends');
+        if (this.WEEKENDS.includes(now.getDay()) || this.WEEKENDS.includes(end.getDay()))
+            throw new BadRequestException('Order cannot start or end on weekends');
 
         const car = !!lastOrder ? lastOrder.car : await this.getCar(carId);
         const rate = await this.getRate(rateId);
