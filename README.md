@@ -34,8 +34,9 @@ $ npm install
 
 ## Running the app
 
-Before start, configure the .env file (or add all params into environment in command line)
-
+Before start: 
+1. configure the .env file (or add all params into environment in command line)
+2. Execute SQL file `carsharing.sql` on database, for create structure and fill data into tables
 ```bash
 # development
 $ npm run start
